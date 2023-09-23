@@ -3,13 +3,11 @@ function mostrarPrimos(num)
 {
     const Fac_Primos = []
     let divisor = 2;
-    while (num > 1) {
-        while (num % divisor == 0) {
-            Fac_Primos.push(divisor);
-            num = num / divisor;
-        }    
-        divisor++; 
-    }
+    for (; num > 1; divisor++) {
+        for (; num % divisor === 0; num /= divisor) {
+          Fac_Primos.push(divisor);
+        }
+      }
     return Fac_Primos;
 }
 
