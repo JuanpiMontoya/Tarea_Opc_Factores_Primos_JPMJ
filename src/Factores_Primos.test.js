@@ -8,4 +8,9 @@ describe("Factores Primos", () => {
   it("La lista devuelve los factores al escribir 2", () => {
     expect(mostrarPrimos(2)).toEqual([2]);
   });
+
+  it("La lista devuelve los factores al escribir 3", () => {
+    expect(mostrarPrimos(3)).toEqual([3]);
+  });
+
 });
