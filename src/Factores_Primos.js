@@ -2,14 +2,13 @@
 function mostrarPrimos(num)
 {
     const Fac_Primos = []
-    if (num > 1) {
-        while (num % 2 == 0) {
-            Fac_Primos.push(2);
-            num = num / 2;
-        }
-        if (num > 1){
-            Fac_Primos.push(num);
-        }
+    let divisor = 2;
+    while (num > 1) {
+        while (num % divisor == 0) {
+            Fac_Primos.push(divisor);
+            num = num / divisor;
+        }    
+        divisor++; 
     }
     return Fac_Primos;
 }
