@@ -21,4 +21,9 @@ describe("Factores Primos", () => {
     expect(mostrarPrimos(6)).toEqual([2,3]);
   });
 
+  it("La lista devuelve los dos factores al escribir 8", () => {
+    console.log(mostrarPrimos(8));
+    expect(mostrarPrimos(8)).toEqual([2,2,2]);
+  });
+
 });

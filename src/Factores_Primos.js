@@ -3,7 +3,7 @@ function mostrarPrimos(num)
 {
     const Fac_Primos = []
     if (num > 1) {
-        if (num % 2 == 0) {
+        while (num % 2 == 0) {
             Fac_Primos.push(2);
             num = num / 2;
         }
